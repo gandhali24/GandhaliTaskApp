@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <!--It has a text view which we will use in our case as
+            a description text for the languages-->
+        <TextView
+            android:id="@+id/tv_facilityTypes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="visible"
+            android:text="Facility Type"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <!-- ImageVIew to display our Course Image -->
+       <ImageView
+           android:id="@+id/imageview"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:src="@drawable/ic_apartment"
+            />
+        <TextView
+            android:id="@+id/tvOptionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Name"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_expandible_View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+        <!--It has a text view which we will use in our case as
+            a description text for the languages-->
+        <TextView
+            android:id="@+id/tvExclusions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:text="Description Text"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

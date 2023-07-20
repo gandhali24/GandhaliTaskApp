@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Radius Task</string>
+    <string name="strDesc">Description Text</string>
+    <string name="strName">Name</string>
+</resources>
